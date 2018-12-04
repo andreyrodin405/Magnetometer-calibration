@@ -1,0 +1,55 @@
+% Преамбула
+
+% определяем формат страницы и тип документа ( А4, 12 пунктов, статья)
+\documentclass[a4paper,12pt]{article}
+
+% Задаём отступы и межстрочный интервал
+\usepackage[top=2cm,bottom=2cm,left=3cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+% подключаем пакеты расширения LaTeX
+\usepackage{cmap}					% поиск в PDF
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% Русский язык и переносы
+\usepackage{indentfirst} 			% красная строка
+\frenchspacing						
+\usepackage[utf8]{inputenc}			% кодировка	
+\usepackage[T1]{fontenc}			
+
+% полезные пакетики
+\usepackage{amsmath} 									% для продвинутых формул
+\usepackage{graphicx}									% для графиков
+\usepackage[colorinlistoftodos]{todonotes}				% для пометок
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}	% расширенная поддержка гиперссылок
+\usepackage{comment}									% многострочные комментарии
+\usepackage{ulem}										% зачёркнутый текст
+\usepackage{xcolor}										% цветной текст
+\usepackage{color}										% цветной код
+\usepackage{listings}									% отображает блоки кода
+
+% настройка пакета подсветки исходного кода (не совсем рабочий)
+\lstloadlanguages{ [LaTeX ] TeX, bash , Fortran , Perl ,C++,make} 
+\lstset{ 			language =[LaTeX ] TeX,		 % выбираем язык по умолчанию
+                    extendedchars=true , 		 % включаем не латиницу (не работает)
+                    escapechar =| , 			 % |«выпадаем» в LATEX|
+                    frame=tb , 					 % рамка сверху и снизу ( lr - слева, справа )
+                    commentstyle=\itshape , 	 % шрифт для комментариев
+                    stringstyle =\bfseries }	 % шрифт для строк
+
+
+
+\author{Андрей Родин} % Вводим своё имя
+\title{Отчёт по калибровке магнитометров в ГКВ-11}  % Заголовок
+\date{\today} % установка даты
+
+\begin{document}
+
+\maketitle
+
+\section{Введение}
+\subsection{О погрешностях}
+Используемая модель магнитного поля WMM 2015 имеет погрешность определения магнитного склонения, представленную на рисунке ~\ref{fig:WMM_error_field}.
+\section{Методы}
+\subsection{Методика проверки калиброванных измерений}
+
+\end{document}
